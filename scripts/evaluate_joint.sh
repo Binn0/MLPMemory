@@ -1,8 +1,8 @@
 DATASET=/mnt/petrelfs/linzhouhan/weirubin/projects/MLPMemory/dataset/wikitext-gpt2
 
 MODEL=/mnt/petrelfs/linzhouhan/weirubin/models/gpt2-large-best-finetuned-wikitext103
-# gpt2-small memory decoder can be downloaded in https://huggingface.co/Clover-Hill/MemoryDecoder-gpt2-small
-KNN_PATH=/mnt/petrelfs/linzhouhan/weirubin/projects/MLPMemory/checkpoints/gpt2-large-best-knnxl-offline/epoch_2
+# gpt2-large mlp memory can be downloaded in https://huggingface.co/Rubin-Wei/MLPMemory-gpt2-large
+KNN_PATH=/mnt/petrelfs/linzhouhan/weirubin/projects/MLPMemory/checkpoints/gpt2-large-best-knnxl-offline/epoch_10
 
 OUTPUT_DIR=tmp/
 

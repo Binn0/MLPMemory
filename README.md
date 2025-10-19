@@ -279,7 +279,7 @@ bash downstream/eval_qa.sh
 
 ## 🙏 Acknowledgments
 
-This implementation is inspired by the excellent work in [knn-transformers](https://github.com/neulab/knn-transformers). We are grateful for their pioneering contributions to retrieval-augmented language modeling.
+This implementation is inspired by the excellent work in [knn-transformers](https://github.com/neulab/knn-transformers) and [MemoryDecoder](https://github.com/LUMIA-Group/MemoryDecoder). We are grateful for their pioneering contributions to retrieval-augmented language modeling.
 
 ## 📧 Contact
 
