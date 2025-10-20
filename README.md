@@ -59,7 +59,7 @@ conda activate mlpmemory
 
 ### 📊 Evaluate and Use MLP Memory
 
-We provide the checkpoint of gpt2-large MLP Memory used in our experiments 🤗[gpt2-large MLP Memory](https://huggingface.co/Rubin-Wei/MLPMemory-gpt2-large). Simply download this checkpoint and 🤗[wikitext-103 dataset](https://huggingface.co/datasets/Salesforce/wikitext) from huggingface and run the following scripts:
+We provide the checkpoint of gpt2-large MLP Memory used in our experiments 🤗[MLPMemory-gpt2-large](https://huggingface.co/Rubin-Wei/MLPMemory-gpt2-large). Simply download this checkpoint and 🤗[wikitext-103 dataset](https://huggingface.co/datasets/Salesforce/wikitext) from huggingface and run the following scripts:
 
 #### 📝 Data Preprocessing
 ```bash
@@ -278,7 +278,6 @@ bash train_mlpmem_online.sh
 ```
 
 ## 💡 Downstream Evaluation
-We provide the checkpoint of MLP Memory used for downstream evaluation 🤗[MLPMemory-Mistral-wikiepdia](https://huggingface.co/Rubin-Wei/MLPMemory-Mistral-wikipedia).
 To eval base model, remove `--use_neural_knn` and run:
 ```bash
 # downstream/eval_qa.sh
