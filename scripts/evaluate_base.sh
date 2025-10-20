@@ -1,6 +1,6 @@
-DATASET=/mnt/petrelfs/linzhouhan/weirubin/projects/MLPMemory/dataset/wikitext-gpt2
-MODEL=/mnt/petrelfs/linzhouhan/weirubin/models/gpt2-large
-OUTPUT_DIR=tmp/gpt2-large/
+DATASET=/path/to/dataset/wikitext-gpt2
+MODEL=/path/to/model
+OUTPUT_DIR=tmp/
 
 NCCL_P2P_DISABLE=1 NCCL_IB_DISABLE=1 CUDA_VISIBLE_DEVICES=0 python \
     -m \

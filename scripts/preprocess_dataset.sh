@@ -1,4 +1,4 @@
-TOKENIZER="/mnt/petrelfs/linzhouhan/weirubin/models/gpt2-large-best-finetuned-wikitext103"
+TOKENIZER="/path/to/models/gpt2-large-finetuned-wikitext103"
 OUTPUT_DIR=./dataset/wikitext-gpt2
 
 python utils/preprocess_dataset.py \

@@ -15,8 +15,9 @@ Usage:
 # ================================
 # ⚙️ Model paths configuration
 # ================================
-base_lm_path = "/mnt/petrelfs/linzhouhan/weirubin/models/Mistral-7B-v0.3"
-knn_generator_path = "/mnt/petrelfs/linzhouhan/weirubin/models/base-mistral-neural-1.5B-wikipedia2021-train-embed1_lr=4e-4-mlp_noise0.2_KD_4_6_E20/epoch_6"
+base_lm_path = "/path/to/models/Mistral-7B-v0.3"
+# MLP Memory can be downloaded in https://huggingface.co/Rubin-Wei/MLPMemory-Mistral-wikipedia
+knn_generator_path = "/path/to/mlp/memory"
 
 # ================================
 # 🧠 Load tokenizer & models

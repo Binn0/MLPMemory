@@ -137,7 +137,7 @@ def main():
 
     if "wikitext" in args.dataset_name:
        raw_datasets = load_dataset(args.dataset_name, "wikitext-103-raw-v1")
-    elif "enwiki-dec2021" in args.dataset_name:
+    elif "enwiki-dec2021" in args.dataset_name: # for wikipedia dataset, we split into train & test dataset
         dataset = load_dataset('json', data_files=args.dataset_name)
         split_dataset = dataset['train'].train_test_split(
             test_size=0.002,

@@ -1,8 +1,9 @@
 #!/bin/bash
 
-MODEL=/mnt/petrelfs/linzhouhan/weirubin/models/Mistral-7B-v0.3
+MODEL=/path/to/models/Mistral-7B-v0.3
 MODEL_NAME=mistral
-KNN_GENERATOR_PATH=/mnt/petrelfs/linzhouhan/weirubin/models/base-mistral-neural-1.5B-wikipedia2021-train-embed1_lr=4e-4-mlp_noise0.2_KD_4_6_E20/MLPMemory-1B-wikipedia-for-Mistral-7B-v0.3
+# MLP Memory can be downloaded in https://huggingface.co/Rubin-Wei/MLPMemory-Mistral-wikipedia
+KNN_GENERATOR_PATH=/path/to/mlp/memory
 
 TASKS=("nq" "hotpotqa")
 # or hotpotqa

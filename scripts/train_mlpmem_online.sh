@@ -1,21 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=weirubin_train_mlpmemory_online_gpt2-large-best-knnxl
-#SBATCH --partition=plm
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=8
-#SBATCH --gres=gpu:8
-#SBATCH --cpus-per-task=12
-#SBATCH --mem=0
-#SBATCH --exclusive
-#SBATCH --output=./logs/%x.log
 
 BASE_MODEL_NAME=large
 ALPHA=0.5
-DATASET=/mnt/petrelfs/linzhouhan/weirubin/projects/MLPMemory/dataset/wikitext-gpt2
+DATASET=/path/to/dataset/wikitext-gpt2
 ACCELERATE_CONFIG=./accelerate_config/8_card.yaml
-MODEL=/mnt/petrelfs/linzhouhan/weirubin/models/gpt2-large-best-finetuned-wikitext103
-KNN_SAVE_PATH=/mnt/petrelfs/linzhouhan/weirubin/projects/MLPMemory/dstore/gpt2-xl/wikitext/knn_gpt2_train_1600.arrow
-OUTPUT_DIR=./checkpoints/gpt2-large-best-knnxl-online
+MODEL=/path/to/models/gpt2-large-best-finetuned-wikitext103
+KNN_SAVE_PATH=/path/to/dstore/gpt2-xl/wikitext/knn_gpt2_train_1600.arrow
+OUTPUT_DIR=./checkpoints/xxx
 
 accelerate launch \
     --config_file ${ACCELERATE_CONFIG} \
@@ -34,7 +25,7 @@ accelerate launch \
     --per_device_train_batch_size 16 \
     --per_device_eval_batch_size 16 \
     --num_warmup_steps 2000 \
-    --num_train_epochs 100 \
+    --num_train_epochs 50 \
     --seed 42 \
     --checkpointing_steps "epoch" \
     --report_to none

@@ -14,12 +14,12 @@ DATASET_NAME="wikitext"
 SUBSET="train"
 
 # Path Configuration
-DATASET="/mnt/petrelfs/linzhouhan/weirubin/projects/MLPMemory/dataset/wikitext-gpt2"
+DATASET="/path/to/dataset/wikitext-gpt2"
 ACCELERATE_CONFIG="./accelerate_config/${MODEL_FAMILY}.yaml"
 DSTORE_DIR="./dstore/${MODEL_FAMILY}-${MODEL_SIZE}/${DATASET_NAME}"
 OUTPUT_DIR="./results/tmp/${MODEL_FAMILY}-${MODEL_SIZE}-${DATASET_NAME}-ppl"
 # It is suggested to use the finetuned version of gpt-xl model in https://huggingface.co/Clover-Hill/gpt2-xl-finetuned-wikitext103
-MODEL_TO_SAVE="/mnt/petrelfs/linzhouhan/weirubin/models/gpt2-xl-finetuned-wikitext103"
+MODEL_TO_SAVE="/path/to/models/gpt2-xl-finetuned-wikitext103"
 
 # Training Configuration
 # Change batch size based on the memory of your GPU

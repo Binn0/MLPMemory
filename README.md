@@ -105,10 +105,10 @@ python -m evaluate_joint \
 
 |   Model    | #Params |  PPL  |
 |:----------|:-----------:|:----:|
-| GPT2-large-vanilla | 774M | 15.80  |
-| GPT2-large-finetuned | 774M | 10.42 |
+| GPT2-large-vanilla | 744M | 15.80  |
+| GPT2-large-finetuned | 744M | 10.42 |
 | GPT2-xl-finetuned | 1.5B | 10.16 |
-| GPT2-large-finetuned + MLPMem | 774M + 774M| **9.51** | 
+| GPT2-large-finetuned + MLPMem | 744M + 744M| **9.58** | 
 
 
 ### 💡 Generation Example
@@ -290,10 +290,10 @@ For questions and discussions, feel free to email: **weirubinn@gmail.com**
 If you find MLP Memory helpful in your research, please consider citing:
 
 ```bibtex
-@article{wei2025mlp,
-  title={MLP Memory: Language Modeling with Retriever-pretrained External Memory},
-  author={Wei, Rubin and Cao, Jiaqi and Wang, Jiarui and Kai, Jushi and Guo, Qipeng and Zhou, Bowen and Lin, Zhouhan},
-  journal={arXiv preprint arXiv:2508.01832},
-  year={2025}
+@inproceedings{Wei2025MLPMA,
+  title={MLP Memory: A Retriever-Pretrained Memory for Large Language Models},
+  author={Rubin Wei and Jiaqi Cao and Jiarui Wang and Jushi Kai and Qipeng Guo and Bowen Zhou and Zhouhan Lin},
+  year={2025},
+  url={https://api.semanticscholar.org/CorpusID:281658735}
 }
 ```
