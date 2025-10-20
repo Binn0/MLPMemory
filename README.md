@@ -3,7 +3,7 @@
 <div align="center">
 
 [![arXiv](https://img.shields.io/badge/arXiv%20paper-2508.01832-b31b1b.svg)](https://arxiv.org/pdf/2508.01832)
-[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-MLPMemory-yellow)](https://huggingface.co/Rubin-Wei/MLPMemory-1B-wikipedia-for-Mistral-7B-v0.3)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-MLPMemory-yellow)](https://huggingface.co/collections/Rubin-Wei/mlpmemory-68f4e617aa42a93510861760)
 
 
 </div>
