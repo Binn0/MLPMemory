@@ -44,6 +44,19 @@ conda env create -f environment.yml
 conda activate mlpmemory
 ```
 
+### 🤗 Models and Datasets
+
+#### Models
+
+- [GPT2-large-finetuned-wikitext103](https://huggingface.co/Rubin-Wei/gpt2-large-finetuned-wikitext103): The base model enhanced by MLP Memory, fine-tuned on the WikiText-103 dataset.
+- [MLPMemory-gpt2-large](https://huggingface.co/Rubin-Wei/MLPMemory-gpt2-large): The MLP Memory module trained for GPT2-large-finetuned-wikitext103.
+- [MLPMemory-Mistral-wikiepdia](https://huggingface.co/Rubin-Wei/MLPMemory-Mistral-wikipedia): The MLP Memory trained on the English Wikipedia (Dec 2021) corpus to augment the Mistral-7B-v0.3 model.
+
+#### Datasets
+
+- [Preprocessed English Wikipedia (Dec 2021)](https://huggingface.co/datasets/Rubin-Wei/enwiki-dec2021-preprocessed-mistral): The English Wikipedia dataset (Dec 2021) preprocessed using the Mistral tokenizer.
+- [kNN-Targets-wikipedia-mistral](https://huggingface.co/datasets/Rubin-Wei/kNN-Targets-wikipedia-mistral): The kNN target dataset generated from the Wikipedia corpus for the Mistral model, used directly for MLP Memory training.
+
 ### 📊 Evaluate and Use MLP Memory
 
 We provide the checkpoint of gpt2-large MLP Memory used in our experiments 🤗[gpt2-large MLP Memory](https://huggingface.co/Rubin-Wei/MLPMemory-gpt2-large). Simply download this checkpoint and 🤗[wikitext-103 dataset](https://huggingface.co/datasets/Salesforce/wikitext) from huggingface and run the following scripts:
@@ -265,6 +278,7 @@ bash train_mlpmem_online.sh
 ```
 
 ## 💡 Downstream Evaluation
+We provide the checkpoint of MLP Memory used for downstream evaluation 🤗[MLPMemory-Mistral-wikiepdia](https://huggingface.co/Rubin-Wei/MLPMemory-Mistral-wikipedia).
 To eval base model, remove `--use_neural_knn` and run:
 ```bash
 # downstream/eval_qa.sh
