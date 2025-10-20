@@ -118,10 +118,10 @@ python -m evaluate_joint \
 
 |   Model    | #Params |  PPL  |
 |:----------|:-----------:|:----:|
-| GPT2-large-vanilla | 744M | 15.80  |
-| GPT2-large-finetuned | 744M | 10.42 |
+| GPT2-large-vanilla | 774M | 15.80  |
+| GPT2-large-finetuned | 774M | 10.42 |
 | GPT2-xl-finetuned | 1.5B | 10.16 |
-| GPT2-large-finetuned + MLPMem | 744M + 744M| **9.58** | 
+| GPT2-large-finetuned + MLPMem | 774M + 774M| **9.58** | 
 
 
 ### 💡 Generation Example
